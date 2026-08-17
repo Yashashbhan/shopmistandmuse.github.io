@@ -34,16 +34,27 @@
             overflow-x: hidden;
         }
 
+        /* HEADER & HERO */
         header {
             text-align: center;
-            padding: 60px 20px 35px;
+            padding: 50px 20px 35px;
             background: radial-gradient(circle at center, #1F1C18 0%, #0D0D0E 80%);
             border-bottom: 1px solid var(--border-gold);
         }
 
+        .brand-logo-img {
+            width: 170px;
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto 15px;
+            display: block;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.25));
+            border-radius: 12px;
+        }
+
         .brand-logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 52px;
+            font-size: 48px;
             font-weight: 700;
             letter-spacing: 6px;
             text-transform: uppercase;
@@ -114,7 +125,7 @@
             font-size: 14px;
         }
 
-        /* PRODUCT GRID */
+        /* GRID WITH INDIVIDUAL IMAGE CARDS */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -338,7 +349,8 @@
         }
 
         @media(max-width: 768px) {
-            .brand-logo { font-size: 38px; }
+            .brand-logo { font-size: 36px; }
+            .brand-logo-img { width: 140px; }
             .section-title { font-size: 28px; }
             .card-img-wrap { height: 300px; }
         }
@@ -347,6 +359,9 @@
 <body>
 
     <header>
+        <!-- BRAND LOGO EMBLEM -->
+        <img src="logo.jpg" alt="Mist & Muse Logo Emblem" class="brand-logo-img" onerror="this.style.display='none'">
+        
         <div class="brand-logo">Mist & Muse</div>
         <div class="brand-subtitle">Artisanal Perfumes & Attars</div>
         <p class="tagline">Crafted by tradition, worn with confidence.</p>
