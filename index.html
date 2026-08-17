@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mist & Muse | Crafted by Tradition, Worn with Excellence</title>
+    <title>Mist & Muse | Crafted by Tradition, Worn with Confidence</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
             --text-muted: #A0A0A0;
             --border-gold: rgba(212, 175, 55, 0.25);
             --border-card: rgba(255, 255, 255, 0.08);
+            --insta-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         }
 
         * {
@@ -47,8 +48,17 @@
             letter-spacing: 6px;
             text-transform: uppercase;
             color: var(--gold);
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             text-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .brand-subtitle {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--gold-light);
+            margin-bottom: 8px;
+            font-weight: 500;
         }
 
         .tagline {
@@ -104,7 +114,7 @@
             font-size: 14px;
         }
 
-        /* GRID WITH INDIVIDUAL IMAGE CARDS */
+        /* PRODUCT GRID */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -240,23 +250,27 @@
             font-weight: 500;
         }
 
-        .btn-order {
-            display: block;
+        .btn-order-insta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
             text-align: center;
             text-decoration: none;
-            background: linear-gradient(135deg, #D4AF37 0%, #AA820A 100%);
-            color: #000000;
+            background: var(--insta-gradient);
+            color: #FFFFFF;
             font-weight: 600;
             font-size: 12px;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             padding: 14px;
             border-radius: 6px;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease, transform 0.2s ease;
         }
 
-        .btn-order:hover {
-            opacity: 0.9;
+        .btn-order-insta:hover {
+            opacity: 0.92;
+            transform: scale(1.02);
         }
 
         .features-grid {
@@ -302,7 +316,7 @@
         .insta-btn {
             display: inline-block;
             text-decoration: none;
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: var(--insta-gradient);
             color: #FFFFFF;
             font-size: 13px;
             font-weight: 600;
@@ -334,7 +348,8 @@
 
     <header>
         <div class="brand-logo">Mist & Muse</div>
-        <p class="tagline">Crafted by tradition, worn with excellence.</p>
+        <div class="brand-subtitle">Artisanal Perfumes & Attars</div>
+        <p class="tagline">Crafted by tradition, worn with confidence.</p>
         
         <div class="pill-container">
             <span class="pill">✨ 20% Fragrance Oil Concentration</span>
@@ -381,7 +396,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/?text=Hi%20Mist%20%26%20Muse!%20I%20would%20like%20to%20order%20the%20Victor%20Noir%20(50ml)%20Eau%20De%20Parfum." target="_blank" class="btn-order">Order on WhatsApp</a>
+                    <a href="https://www.instagram.com/mistandmuse.co?igsh=MTcxN3JhNHJoMGZkdA==" target="_blank" class="btn-order-insta">📸 Order via Instagram DM</a>
                 </div>
             </div>
 
@@ -412,7 +427,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/?text=Hi%20Mist%20%26%20Muse!%20I%20would%20like%20to%20order%20the%20Avenir%20(50ml)%20Unisex%20Eau%20De%20Parfum." target="_blank" class="btn-order">Order on WhatsApp</a>
+                    <a href="https://www.instagram.com/mistandmuse.co?igsh=MTcxN3JhNHJoMGZkdA==" target="_blank" class="btn-order-insta">📸 Order via Instagram DM</a>
                 </div>
             </div>
 
@@ -443,7 +458,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/?text=Hi%20Mist%20%26%20Muse!%20I%20would%20like%20to%20order%20the%20Velora%20(50ml)%20Eau%20De%20Parfum." target="_blank" class="btn-order">Order on WhatsApp</a>
+                    <a href="https://www.instagram.com/mistandmuse.co?igsh=MTcxN3JhNHJoMGZkdA==" target="_blank" class="btn-order-insta">📸 Order via Instagram DM</a>
                 </div>
             </div>
 
@@ -484,7 +499,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/?text=Hi%20Mist%20%26%20Muse!%20I%20would%20like%20to%20order%20the%20Rose%20Rooh%20(10ml)%20Attar." target="_blank" class="btn-order">Order on WhatsApp</a>
+                    <a href="https://www.instagram.com/mistandmuse.co?igsh=MTcxN3JhNHJoMGZkdA==" target="_blank" class="btn-order-insta">📸 Order via Instagram DM</a>
                 </div>
             </div>
 
@@ -515,7 +530,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/?text=Hi%20Mist%20%26%20Muse!%20I%20would%20like%20to%20order%20the%20Oud%20%26%20Earth%20(10ml)%20Attar." target="_blank" class="btn-order">Order on WhatsApp</a>
+                    <a href="https://www.instagram.com/mistandmuse.co?igsh=MTcxN3JhNHJoMGZkdA==" target="_blank" class="btn-order-insta">📸 Order via Instagram DM</a>
                 </div>
             </div>
 
@@ -546,7 +561,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/?text=Hi%20Mist%20%26%20Muse!%20I%20would%20like%20to%20order%20the%20Aurelia%20(10ml)%20Attar." target="_blank" class="btn-order">Order on WhatsApp</a>
+                    <a href="https://www.instagram.com/mistandmuse.co?igsh=MTcxN3JhNHJoMGZkdA==" target="_blank" class="btn-order-insta">📸 Order via Instagram DM</a>
                 </div>
             </div>
 
@@ -577,7 +592,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/?text=Hi%20Mist%20%26%20Muse!%20I%20would%20like%20to%20order%20the%20Musk%20Noir%20(10ml)%20Attar." target="_blank" class="btn-order">Order on WhatsApp</a>
+                    <a href="https://www.instagram.com/mistandmuse.co?igsh=MTcxN3JhNHJoMGZkdA==" target="_blank" class="btn-order-insta">📸 Order via Instagram DM</a>
                 </div>
             </div>
 
@@ -610,7 +625,7 @@
             📸 Follow @mistandmuse.co on Instagram
         </a>
         <p class="delivery-note">🚚 Complimentary Same-Day / Next-Day Delivery across all Mumbai locations</p>
-        <p class="copyright">© 2026 Mist & Muse. All rights reserved. Crafted by Tradition, Worn with Excellence.</p>
+        <p class="copyright">© 2026 Mist & Muse. All rights reserved. Crafted by Tradition, Worn with Confidence.</p>
     </footer>
 
 </body>
